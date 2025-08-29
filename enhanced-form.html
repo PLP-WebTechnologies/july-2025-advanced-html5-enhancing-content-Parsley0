@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A multi-section HTML5 page showcasing lists, tables, media, and an advanced HTML5 form with validation.">
+    <meta name="author" content="Your Name">
+    <title>Enhanced Form Example</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Multi-Section HTML5 Page</h1>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#registration">Registration Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Section: About -->
+        <section id="about">
+            <h2>About This Page</h2>
+            <p>This page demonstrates the use of semantic HTML5 elements, lists, tables, media, and a fully validated HTML5 form without JavaScript.</p>
+        </section>
+
+        <!-- Section: Features (Lists) -->
+        <section id="features">
+            <h2>Key Features</h2>
+            <ul>
+                <li>Semantic HTML5 Structure</li>
+                <li>Accessible Navigation and Form Labels</li>
+                <li>Responsive and User-Friendly Layout</li>
+            </ul>
+            <h3>Form Elements Included</h3>
+            <ol>
+                <li>Text and Email Fields</li>
+                <li>Password and Number Inputs</li>
+                <li>Date Picker and Radio Buttons</li>
+                <li>Dropdown Menus and Checkboxes</li>
+            </ol>
+        </section>
+
+        <!-- Section: Table -->
+        <section>
+            <h2>Sample Price Table</h2>
+            <table border="1" cellpadding="6" cellspacing="0">
+                <caption>Product Pricing</caption>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Category</th>
+                        <th>Price (USD)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML5 Guide</td>
+                        <td>E-book</td>
+                        <td>$15</td>
+                    </tr>
+                    <tr>
+                        <td>Web Design Basics</td>
+                        <td>Course</td>
+                        <td>$50</td>
+                    </tr>
+                    <tr>
+                        <td>Pro UI Kit</td>
+                        <td>Resources</td>
+                        <td>$25</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Section: Media -->
+        <section id="media">
+            <h2>Watch Our Intro Video</h2>
+            <video width="320" height="240" controls>
+                <source src="intro.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+            <h3>Listen to Our Audio Clip</h3>
+            <audio controls>
+                <source src="sample-audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        <!-- Section: Form -->
+        <section id="registration">
+            <h2>Registration Form</h2>
+            <form action="#" method="post" autocomplete="on">
+                <!-- Personal Info -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3"><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="example@mail.com" required><br><br>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required minlength="6" placeholder="At least 6 characters"><br><br>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+1234567890" pattern="^\+?\d{10,15}$" required><br><br>
+                </fieldset>
+
+                <!-- Preferences -->
+                <fieldset>
+                    <legend>Preferences</legend>
+
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required><br><br>
+
+                    <p>Gender:</p>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label><br><br>
+
+                    <label for="country">Country:</label>
+                    <select id="country" name="country" required>
+                        <option value="">Select your country</option>
+                        <option value="kenya">Kenya</option>
+                        <option value="uganda">Uganda</option>
+                        <option value="tanzania">Tanzania</option>
+                    </select><br><br>
+
+                    <p>Subscribe to:</p>
+                    <input type="checkbox" id="newsletter" name="subscribe" value="newsletter">
+                    <label for="newsletter">Newsletter</label>
+
+                    <input type="checkbox" id="offers" name="subscribe" value="offers">
+                    <label for="offers">Special Offers</label><br><br>
+                </fieldset>
+
+                <!-- Additional Info -->
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <label for="comments">Comments:</label><br>
+                    <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Your feedback..."></textarea><br><br>
+
+                    <label for="readonlyField">Referral Code:</label>
+                    <input type="text" id="readonlyField" name="referral" value="AUTO123" readonly><br><br>
+                </
